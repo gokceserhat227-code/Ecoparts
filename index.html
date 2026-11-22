@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101114">
+  <meta name="description" content="Ecoparts oto yedek parça mağazası. Aracınıza uygun parçaları bulun, WhatsApp üzerinden sipariş verin ve havale/EFT ile ödeyin.">
+  <title>Ecoparts | Oto Yedek Parça</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">Türkiye'nin her yerine hızlı kargo <span>•</span> WhatsApp'tan kolay sipariş</div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Ecoparts ana sayfa"><span class="brand-mark">E</span><span>ECO<span class="brand-accent">PARTS</span><small>OTO YEDEK PARÇA</small></span></a>
+    <form class="search" id="search-form" role="search"><input id="search-input" type="search" placeholder="Ürün, marka veya parça kodu ara..." aria-label="Ürün ara"><button aria-label="Ara" type="submit">⌕</button></form>
+    <div class="header-actions"><a class="contact-link" id="header-whatsapp" href="#contact">☏ <span>WhatsApp</span></a><button class="cart-trigger" id="cart-open" aria-label="Sepeti aç">Sepet <b id="cart-count">0</b></button></div>
+  </header>
+  <main id="top">
+    <section class="hero"><div class="hero-copy"><span class="eyebrow">YOLUNUZ GÜVENLE DEVAM ETSİN</span><h1>Aracınız için<br><em>doğru parça.</em></h1><p>Kaliteli oto yedek parçaları kolayca bulun. Siparişinizi WhatsApp üzerinden iletin, havale/EFT ile güvenle ödeyin.</p><a class="button button-primary" href="#products">Ürünleri keşfet <span>→</span></a><div class="hero-notes"><span>✓ Kolay sipariş</span><span>✓ Havale / EFT</span><span>✓ Türkiye geneli kargo</span></div></div><div class="hero-art" aria-hidden="true"><div class="art-ring"></div><div class="art-label">ECOPARTS<br><small>PERFORMANS & GÜVEN</small></div><div class="art-chip">OTO<br>PARÇA</div></div></section>
+    <section class="vehicle-finder" aria-label="Araca göre ürün bul"><div class="finder-title"><span class="finder-icon">⌕</span><div><h2>Aracına göre parça bul</h2><p>Uyumluluğu kontrol etmek için aracını seç</p></div></div><div class="finder-controls"><select id="vehicle-brand" aria-label="Araç markası"><option value="">Marka seç</option></select><select id="vehicle-model" aria-label="Araç modeli" disabled><option value="">Önce marka seç</option></select><button class="button button-dark" id="vehicle-search">Parçaları göster <span>→</span></button></div></section>
+    <section class="categories section-wrap"><div class="section-heading"><div><span class="eyebrow">İHTİYACINIZI BULUN</span><h2>Popüler kategoriler</h2></div><a href="#products" class="text-link">Tüm ürünler →</a></div><div class="category-grid" id="category-grid"></div></section>
+    <section class="products-section" id="products"><div class="section-wrap"><div class="section-heading"><div><span class="eyebrow">ECOPARTS SEÇKİSİ</span><h2>Öne çıkan ürünler</h2></div><div class="filter-wrap"><label class="sr-only" for="category-filter">Kategori filtresi</label><select id="category-filter"><option value="all">Tüm kategoriler</option></select><select id="sort-filter" aria-label="Ürünleri sırala"><option value="featured">Öne çıkanlar</option><option value="price-asc">Fiyat: artan</option><option value="price-desc">Fiyat: azalan</option></select></div></div><div class="product-grid" id="product-grid"></div><p class="empty-state" id="empty-state" hidden>Aramanızla eşleşen ürün bulunamadı.</p></div></section>
+    <section class="trust-row section-wrap"><div><span>01</span><p><b>Aracına uygun ürün</b><br>Uyumluluğu sipariş öncesi teyit edin.</p></div><div><span>02</span><p><b>WhatsApp ile sipariş</b><br>Sorularınızı doğrudan bize iletin.</p></div><div><span>03</span><p><b>Havale / EFT</b><br>Ödeme bilgileri sipariş sırasında paylaşılır.</p></div></section>
+    <section class="contact-banner" id="contact"><div><span class="eyebrow">YARDIMA MI İHTİYACINIZ VAR?</span><h2>Doğru parçayı birlikte bulalım.</h2><p>Parça kodu ve araç bilgilerinizi WhatsApp'tan gönderin.</p></div><a class="button button-light" id="contact-whatsapp" href="#">WhatsApp'tan yazın <span>↗</span></a></section>
+  </main>
+  <footer><a class="brand brand-footer" href="#top"><span class="brand-mark">E</span><span>ECO<span class="brand-accent">PARTS</span><small>OTO YEDEK PARÇA</small></span></a><p>© <span id="year"></span> Ecoparts. Tüm hakları saklıdır.</p><p class="footer-note">Ürün ve araç uyumluluğunu sipariş öncesinde WhatsApp üzerinden teyit ediniz.</p></footer>
+  <div class="overlay" id="overlay" hidden></div>
+  <aside class="cart-panel" id="cart-panel" aria-label="Alışveriş sepeti" aria-hidden="true"><div class="panel-heading"><div><span class="eyebrow">ALIŞVERİŞİNİZ</span><h2>Sepetim <span id="panel-count">(0)</span></h2></div><button class="icon-button" id="cart-close" aria-label="Sepeti kapat">×</button></div><div class="cart-items" id="cart-items"></div><div class="cart-empty" id="cart-empty"><span>🛒</span><h3>Sepetiniz boş</h3><p>Beğendiğiniz ürünleri sepete ekleyin.</p></div><div class="cart-bottom" id="cart-bottom" hidden><div class="total-line"><span>Ara toplam</span><strong id="cart-total">₺0,00</strong></div><p>Kargo ücreti sipariş onayında bildirilir.</p><button class="button button-primary full-button" id="checkout-open">WhatsApp'tan sipariş ver →</button></div></aside>
+  <dialog id="checkout-dialog"><form method="dialog" id="checkout-form"><div class="dialog-header"><div><span class="eyebrow">SON ADIM</span><h2>Sipariş bilgileri</h2></div><button class="icon-button" value="cancel" aria-label="Kapat">×</button></div><p class="dialog-intro">Bilgilerinizi girin. Sipariş özeti ve havale/EFT bilgileri WhatsApp'ta açılacaktır.</p><label>Ad soyad<input name="name" autocomplete="name" required placeholder="Adınız Soyadınız"></label><label>Telefon<input name="phone" type="tel" autocomplete="tel" required placeholder="05xx xxx xx xx"></label><label>Teslimat adresi<textarea name="address" autocomplete="street-address" required rows="3" placeholder="İl, ilçe, mahalle ve açık adres"></textarea></label><div class="payment-note"><b>Ödeme yöntemi: Havale / EFT</b><span>IBAN ve alıcı bilgisi WhatsApp sipariş mesajında yer alır. Ödemeyi yaptıktan sonra dekontu aynı sohbetten iletin.</span></div><button class="button button-primary full-button" type="submit">WhatsApp ile siparişi tamamla ↗</button><small class="privacy-note">Siparişi göndererek bilgilerinizi sipariş iletişimi için paylaşmayı kabul edersiniz.</small></form></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
